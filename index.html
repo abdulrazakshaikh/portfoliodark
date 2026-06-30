@@ -13,7 +13,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="CSS/custom.css">
+  <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
@@ -354,7 +354,8 @@
 
           <div class="about-item item-6">
             <!-- <img src="img/appicon/movemybox_logo.svg" alt="MoveMyBox" class="img-fluid" /> -->
-            <video loop muted preload="auto" playsinline class="showcasevideo">
+            <video loop muted preload="auto" playsinline class="showcasevideo"
+              onloadeddata="setTimeout(() => this.currentTime=1)">
               <source src="img/appicon/logo_showcase.mp4" type="video/mp4">
             </video>
           </div>
@@ -1349,6 +1350,13 @@
   <!-- LENIS SMOOTH SCROLL CDN -->
   <script src="js/lenis.min.js"></script>
   <script src="js/script.js"></script>
+</body>
+
+</html>>
+
+<!-- LENIS SMOOTH SCROLL CDN -->
+<script src="js/lenis.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>
