@@ -1,0 +1,17 @@
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+ <g>
+  <title>Layer 1</title>
+  <g transform="matrix(1.86086 0 0 1.86086 -10.964 -11.0692)" stroke="null" id="svg_11">
+   <svg stroke="null" y="0" x="0" id="svg_1" height="288" width="288" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+    <path stroke="null" id="svg_2" class="colorffb300 svgShape" d="m60.293,29.87891l-26.17142,-26.17191a3.07312,3.07312 0 0 0 -4.24267,0l-26.17237,26.17191a3.00467,3.00467 0 0 0 0.00046,4.24218l26.17142,26.17191a2.99948,2.99948 0 0 0 4.24267,0l26.17237,-26.17191a3.00467,3.00467 0 0 0 -0.00046,-4.24218z" fill="#ffb300"/>
+    <rect stroke="null" id="svg_3" class="color212121 svgShape" rx="2" fill="#212121" y="21" x="25" height="22" width="6"/>
+    <rect stroke="null" id="svg_4" class="color212121 svgShape" rx="2" fill="#212121" y="21" x="33" height="22" width="6"/>
+    <rect stroke="null" id="svg_5" class="color212121 svgShape" rx="2" fill="#212121" y="21" x="41" height="22" width="6"/>
+    <rect stroke="null" id="svg_6" class="color212121 svgShape" rx="2" fill="#212121" y="21" x="17" height="22" width="6"/>
+    <rect stroke="null" id="svg_7" class="color424242 svgShape" rx="2" fill="#424242" y="25" x="14" height="5" width="36"/>
+    <rect stroke="null" id="svg_8" class="color424242 svgShape" rx="2" fill="#424242" y="34" x="14" height="5" width="36"/>
+   </svg>
+  </g>
+ </g>
+</svg>
