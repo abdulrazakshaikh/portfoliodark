@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlutGrid Package · Abdul Razak Shaikh</title>
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/custom.css">
+  <link rel="stylesheet" href="../css/project-page.css">
+</head>
+
+<body class="proj-page-body">
+  <div id="cs-curtain" class="out"></div>
+
+  <nav>
+    <a href="../index.html#playground" class="proj-back-btn"><span class="back-arrow">←</span> Back to Playground</a>
+    <a href="pg-flutter-widgets.html" class="proj-next-btn">Next Playground<span class="next-arrow">→</span></a>
+  </nav>
+
+  <main class="proj-page-main">
+    <div class="proj-hero-img-wrap" style="margin-bottom: 40px;">
+      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1600&q=85" alt="FlutGrid"
+        class="proj-hero-img" style="filter: brightness(0.85);">
+      <div class="proj-hero-overlay" style="background: linear-gradient(to bottom, transparent 40%, #0f0f0f 100%);">
+      </div>
+    </div>
+
+    <div class="proj-content-wrap">
+      <article class="proj-article">
+        <div class="proj-pg-badge" style="margin-bottom: 24px;">Playground · Open Source · Flutter</div>
+        <div class="rad-text-block proj-reveal" id="overview">
+          <div class="rad-left">
+            <h2 class="rad-left-h">Overview</h2>
+          </div>
+          <div class="rad-right">
+            <h1
+              style="font-family: var(--primaryfont); font-size: clamp(40px, 6vw, 64px); font-weight: 900; line-height: 1; margin-bottom: 24px;">
+              FlutGrid Package<br><span style="font-style: italic; font-weight: 300; color: var(--muted);">Flutter Library</span></h1>
+            <p class="rad-body">A responsive grid system package for Flutter, inspired by Bootstrap's 12-column flexbox grid. It allows developers to quickly build complex, responsive layouts for mobile, tablet, and desktop using a familiar mental model.</p>
+          </div>
+        </div>
+
+        <div class="rad-text-block proj-reveal" id="details">
+          <div class="rad-left">
+            <div class="rad-meta-grid">
+              <div class="rad-meta-item">
+                <span class="rad-meta-label">Company</span>
+                <span class="rad-meta-val">Open Source Community</span>
+              </div>
+              <div class="rad-meta-item">
+                <span class="rad-meta-label">My Role</span>
+                <span class="rad-meta-val">Creator / Maintainer</span>
+              </div>
+              <div class="rad-meta-item">
+                <span class="rad-meta-label">Timeline</span>
+                <span class="rad-meta-val">Ongoing</span>
+              </div>
+              <div class="rad-meta-item">
+                <span class="rad-meta-label">Tech Stack</span>
+                <span class="rad-meta-val" style="color: rgba(255,255,255,0.55); font-size: 14px;">Flutter<br>Dart</span>
+              </div>
+            </div>
+            <a href="https://pub.dev" target="_blank"
+              style="display: inline-block; margin-top: 32px; color: var(--white); font-weight: 500; font-size: 14px; text-decoration: underline; text-underline-offset: 4px;">View on Pub.dev</a>
+          </div>
+          <div class="rad-right">
+            <h2 class="rad-title" style="margin-bottom: 24px; font-size: 24px;">The Problem</h2>
+            <div style="display: flex; gap: 24px; margin-bottom: 32px;">
+              <span
+                style="font-family: var(--primaryfont); font-size: 48px; font-weight: 800; color: rgba(255,255,255,0.1); line-height: 1;">01</span>
+              <p class="rad-body" style="margin: 0; padding-top: 12px;">Flutter's default layout widgets (Row, Column) are powerful but become verbose and nested when building complex responsive dashboards.</p>
+            </div>
+            <div style="display: flex; gap: 24px;">
+              <span
+                style="font-family: var(--primaryfont); font-size: 48px; font-weight: 800; color: rgba(255,255,255,0.1); line-height: 1;">02</span>
+              <p class="rad-body" style="margin: 0; padding-top: 12px;">Web developers transitioning to Flutter miss the simplicity and predictability of a 12-column grid system.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rad-img-wrap proj-reveal">
+          <img src="https://images.unsplash.com/photo-1617042375876-a13e36732a04?w=1200&q=85" alt="Project Process">
+        </div>
+
+        <div class="rad-text-block proj-reveal" id="process">
+          <div class="rad-left">
+            <h2 class="rad-left-h">Process</h2>
+          </div>
+          <div class="rad-right">
+            <h3 class="rad-title" style="margin-bottom: 16px;">Core Architecture</h3>
+            <p class="rad-body">Designed the core layout engine utilizing Flutter's `LayoutBuilder` to accurately determine screen constraints and breakpoints.</p>
+
+            <h3 class="rad-title" style="margin-top: 48px; margin-bottom: 16px;">Breakpoint System</h3>
+            <p class="rad-body">Implemented standard breakpoints (xs, sm, md, lg, xl) mapping to a 12-column grid for intuitive fraction calculations.</p>
+
+            <h3 class="rad-title" style="margin-top: 48px; margin-bottom: 16px;">Publishing</h3>
+            <p class="rad-body">Packaged the library with comprehensive Dartdoc documentation and published it to the official Dart package repository (pub.dev).</p>
+          </div>
+        </div>
+
+        <div class="rad-text-block proj-reveal" id="solution"
+          style="background-color: #02569B; padding: 64px 40px; border-radius: 24px;  ">
+          <div class="rad-left">
+            <h2 class="rad-left-h">The Solution</h2>
+          </div>
+          <div class="rad-right">
+            <p class="rad-body" style="color: rgba(255,255,255,0.9);">FlutGrid provides a declarative, easy-to-read syntax for complex layouts.</p>
+
+            <h3 class="rad-title" style="margin-top: 40px; margin-bottom: 16px;">Familiar Syntax</h3>
+            <p class="rad-body" style="color: rgba(255,255,255,0.7);">Uses `FlutRow` and `FlutCol` widgets that behave exactly like Bootstrap containers and rows.</p>
+
+            <h3 class="rad-title" style="margin-top: 40px; margin-bottom: 16px;">Responsive by Default</h3>
+            <p class="rad-body" style="color: rgba(255,255,255,0.7);">Developers can specify column spans per breakpoint: `FlutCol(md: 6, lg: 4, child: ...)`.</p>
+          </div>
+        </div>
+
+        <div class="rad-text-block proj-reveal" id="impact" style="margin-top: 80px;">
+          <div class="rad-left">
+            <h2 class="rad-left-h">Impact</h2>
+          </div>
+          <div class="rad-right">
+            <p class="rad-body">Accelerated UI development for Flutter web and desktop applications.</p>
+            <div class="rad-card-grid rad-card-2col" style="margin-top: 40px;">
+              <div class="rad-card">
+                <span
+                  style="font-family: var(--primaryfont); font-size: 48px; font-weight: 800; color: var(--white); line-height: 1; display: block; margin-bottom: 12px;">100+</span>
+                <span style="font-size: 16px; font-weight: 500; color: rgba(255,255,255,0.55);">Downloads on Pub.dev</span>
+              </div>
+              <div class="rad-card">
+                <span
+                  style="font-family: var(--primaryfont); font-size: 48px; font-weight: 800; color: var(--white); line-height: 1; display: block; margin-bottom: 12px;">Open</span>
+                <span style="font-size: 16px; font-weight: 500; color: rgba(255,255,255,0.55);">Source</span>
+              </div>
+            </div>
+            <div class="rad-card" style="margin-top: 24px;">
+              <h3 class="rad-title" style="margin-bottom: 8px;">Developer Ergonomics</h3>
+              <p class="rad-body" style="margin: 0; font-size: 15px;">Significantly reduces nesting ("Widget hell") in Flutter layout trees.</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style="margin-top: 120px; text-align: center; background: rgba(255,255,255,0.03); padding: 80px 40px; border-radius: 24px;"
+          class="proj-reveal">
+          <p
+            style="font-size: 14px; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(255,255,255,0.5); margin-bottom: 16px; font-weight: 600;">
+            Next Playground</p>
+          <h2
+            style="font-family: var(--primaryfont); font-size: clamp(32px, 5vw, 48px); font-weight: 800; margin-bottom: 40px;">
+            Flutter Widgets Gallery</h2>
+          <a href="pg-flutter-widgets.html"
+            style="background: var(--white); color: #000; padding: 16px 32px; border-radius: 100px; text-decoration: none; font-weight: 600; font-size: 16px; transition: opacity 0.3s;">View Playground</a>
+        </div>
+      </article>
+
+      <aside class="proj-sidebar">
+        <div class="proj-sidebar-inner">
+          <div class="proj-sidebar-label">INDEX</div>
+          <ul class="proj-index">
+            <li><a href="#overview" class="proj-index-link active">Overview</a></li>
+            <li><a href="#details" class="proj-index-link">The Problem</a></li>
+            <li><a href="#process" class="proj-index-link">Process</a></li>
+            <li><a href="#solution" class="proj-index-link">Solution</a></li>
+            <li><a href="#impact" class="proj-index-link">Impact</a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <footer>
+    <img src="../img/ar-white.png" alt="Abdul Razak Shaikh">
+    <div class="footer-copy">Abdul Razak Shaikh © 2026 &nbsp;·&nbsp; Senior UI/UX Design Leader &nbsp;·&nbsp; Mumbai,
+      India</div>
+    <div class="footer-links">
+      <a href="mailto:ar@example.com" target="_blank" rel="noopener">Email</a>
+      <a href="https://www.linkedin.com/in/abdulrazakshaikh/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://wa.me/919819992152" target="_blank" rel="noopener">Whatsapp</a>
+      <a href="tel:+919819992152">Call</a>
+    </div>
+  </footer>
+
+  <script src="../js/lenis.min.js"></script>
+  <script src="../js/project-page.js"></script>
+</body>
+
+</html>

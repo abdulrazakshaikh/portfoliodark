@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Abdul Razak Shaikh — Senior UI/UX Design Leader with 14+ years experience in Mumbai, India.">
+  <title>Abdul Razak Shaikh — Senior UI/UX Design Leader</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="CSS/custom.css">
+</head>
+
+<body>
+
+  <!-- CURSOR -->
+  <div id="cursor" aria-hidden="true">
+    <div class="c-ring"></div>
+    <div class="c-dot"></div>
+  </div>
+  <div class="orb orb1" aria-hidden="true"></div>
+  <div class="orb orb2" aria-hidden="true"></div>
+
+  <!-- LOADER -->
+  <div id="loader" aria-label="Loading" role="status">
+    <img class="ld-logo" src="img/ar-white.png" alt="AR Logo">
+    <div class="ld-bar-wrap">
+      <div class="ld-bar" id="loaderBar"></div>
+    </div>
+    <div class="ld-num" id="loaderNum">0%</div>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation">
+    <a href="#work" onclick="closeMobileMenu()">Work</a>
+    <a href="#playground" onclick="closeMobileMenu()">Playground</a>
+    <a href="#about" onclick="closeMobileMenu()">About</a>
+  </div>
+
+  <!-- NAV -->
+  <nav id="navbar" role="navigation">
+    <a href="#hero" class="nav-logo" aria-label="Home"><img src="img/ar-white.png" alt="AR"></a>
+    <div class="nav-links">
+      <a href="#work" class="nav-link" data-section="work">Work</a>
+      <a href="#playground" class="nav-link" data-section="playground">Playground</a>
+      <a href="#about" class="nav-link" data-section="about">About Me</a>
+    </div>
+    <button class="nav-burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- CS-PAGE (full screen transition) -->
+  <div id="cs-page" role="main" aria-label="Case study"></div>
+  <!-- CS-PAGE CURTAIN -->
+  <div id="cs-curtain" aria-hidden="true"></div>
+  <!-- BACK BUTTON -->
+  <button id="cs-back" onclick="closeCSPage()" aria-label="Back to portfolio">
+    <span class="back-arrow">←</span> Back to Work
+  </button>
+
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <!-- moving glow follows cursor -->
+    <div class="hero-cursor-glow" id="heroCursorGlow" aria-hidden="true"></div>
+
+    <!-- orbit rings -->
+    <div class="o-ring o-ring-1" aria-hidden="true"></div>
+    <div class="o-ring o-ring-2" aria-hidden="true"></div>
+    <div class="o-ring o-ring-3" aria-hidden="true"></div>
+
+    <!-- ── TOOL ICON BUBBLES ── -->
+    <div class="tools-canvas" id="toolsCanvas" aria-hidden="true">
+
+      <!-- Figma -->
+      <div class="ti lg" data-depth="0.06" style="top:14%;left:6%;animation:f1 9s ease-in-out infinite;">
+        <svg width="38" height="57" viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M9.5 57C14.7467 57 19 52.7467 19 47.5V38H9.5C4.25329 38 0 42.2533 0 47.5C0 52.7467 4.25329 57 9.5 57Z"
+            fill="#0ACF83" />
+          <path d="M0 28.5C0 23.2533 4.25329 19 9.5 19H19V38H9.5C4.25329 38 0 33.7467 0 28.5Z" fill="#A259FF" />
+          <path d="M0 9.5C0 4.25329 4.25329 0 9.5 0H19V19H9.5C4.25329 19 0 14.7467 0 9.5Z" fill="#F24E1E" />
+          <path d="M19 0H28.5C33.7467 0 38 4.25329 38 9.5C38 14.7467 33.7467 19 28.5 19H19V0Z" fill="#FF7262" />
+          <path
+            d="M38 28.5C38 33.7467 33.7467 38 28.5 38C23.2533 38 19 33.7467 19 28.5C19 23.2533 23.2533 19 28.5 19C33.7467 19 38 23.2533 38 28.5Z"
+            fill="#1ABCFE" />
+        </svg>
+      </div>
+
+      <!-- Photoshop -->
+      <div class="ti" data-depth="0.04"
+        style="top:32%;left:4%;animation:f2 11s ease-in-out infinite;animation-delay:-3s;">
+        <img src="img/Icon/photoshop.svg" alt="Photoshop" />
+      </div>
+
+      <!-- Illustrator -->
+      <div class="ti sm" data-depth="0.08"
+        style="top:52%;left:7%;animation:f3 13s ease-in-out infinite;animation-delay:-6s;">
+        <img src="img/Icon/illustrator.svg" alt="Illustrator" />
+      </div>
+
+      <!-- HTML5 -->
+      <div class="ti sm" data-depth="0.05"
+        style="top:70%;left:5%;animation:f4 10s ease-in-out infinite;animation-delay:-2s;">
+        <img src="img/Icon/html.svg" alt="Html" />
+      </div>
+
+      <!-- Flutter -->
+      <div class="ti" data-depth="0.07"
+        style="top:12%;right:6%;animation:f5 10s ease-in-out infinite;animation-delay:-4s;">
+        <img src="img/Icon/flutter.svg" alt="Flutter" />
+      </div>
+
+      <!-- CSS3 -->
+      <div class="ti" data-depth="0.04"
+        style="top:28%;right:4%;animation:f6 12s ease-in-out infinite;animation-delay:-1s;">
+        <img src="img/Icon/css.svg" alt="CSS" />
+      </div>
+
+      <!-- React -->
+      <div class="ti sm" data-depth="0.09"
+        style="top:46%;right:7%;animation:f7 14s ease-in-out infinite;animation-delay:-7s;">
+        <img src="img/Icon/react.svg" alt="React" />
+      </div>
+
+      <!-- Angular -->
+      <div class="ti sm" data-depth="0.05"
+        style="top:62%;right:5%;animation:f8 11s ease-in-out infinite;animation-delay:-5s;">
+        <img src="img/Icon/angular.svg" alt="Angular" />
+      </div>
+
+
+
+      <!-- InVision -->
+      <div class="ti" data-depth="0.04"
+        style="top:20%;left:20%;animation:f10 15s ease-in-out infinite;animation-delay:-8s;opacity:.75;">
+        <img src="img/Icon/invision.svg" alt="Invision" />
+      </div>
+
+      <!-- Node.js -->
+      <div class="ti sm" data-depth="0.07"
+        style="top:82%;left:22%;animation:f11 12s ease-in-out infinite;animation-delay:-4s;opacity:.7;">
+        <img src="img/Icon/node.svg" alt="Node" />
+      </div>
+
+      <!-- Claude  -->
+      <div class="ti lg" data-depth="0.05"
+        style="top:80%;right:17%;animation:f12 16s ease-in-out infinite;animation-delay:-6s;opacity:.65;">
+        <img src="img/Icon/claude.svg" alt="claude" />
+      </div>
+
+      <!-- Gemini -->
+      <div class="ti lg" data-depth="0.06"
+        style="top:78%;right:6%;animation:f9 13s ease-in-out infinite;animation-delay:-3s;">
+        <img src="img/Icon/gemini.svg" alt="Gemini" />
+      </div>
+
+    </div><!-- /tools-canvas -->
+
+    <!-- aside -->
+    <div class="hero-aside" aria-hidden="true">
+      <div class="hero-aside-line"></div>
+      <span class="hero-aside-text">Est. 2010</span>
+      <div class="hero-aside-line"></div>
+    </div>
+
+    <!-- scroll hint -->
+    <div class="scroll-hint" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+
+    <!-- MAIN NAME BLOCK -->
+    <div class="hero-name-block">
+
+      <div class="avail-pill">
+        <span class="avail-dot" aria-hidden="true"></span>
+        Available for Job Opportunities
+      </div>
+      <h1 class="hero-name-main">
+        <span class="nm-first">Abdul Razak</span>
+        <span class="nm-last">Shaikh</span>
+      </h1>
+      <div class="hero-eyebrow">Senior UI/UX Design Leader · Mumbai, India</div>
+      <!-- <div class="hero-role-pill">
+        <span class="hero-role-dot"></span>
+        UI/UX Manager · UI Engineer · Product Designer
+      </div> -->
+
+      <div class="hero-sub">
+        <p class="hero-desc">15+ years designing and engineering intuitive, scalable digital products for web and
+          mobile — from zero to launch, with obsessive craft at every layer.</p>
+
+      </div>
+      <div class="hero-stats">
+        <div><span class="st-val" data-target="15">0</span><span class="st-label">Years Experience</span></div>
+        <div><span class="st-val" data-target="40">0</span><span class="st-label">Products Deliverd</span></div>
+        <div><span class="st-val" data-target="12">0</span><span class="st-label">Client Worked</span></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TICKER -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker-track">
+      <span class="ticker-item">UI/UX Design </span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Design Systems</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Interaction Design</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Frontend Engineering</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">User Research</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Figma</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Flutter</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Product Strategy</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">UI/UX Design</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Design Systems</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Interaction Design</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Frontend Engineering</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">User Research</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Figma</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Flutter</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Product Strategy</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">UI/UX Design</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Design Systems</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Interaction Design</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Frontend Engineering</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">User Research</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Figma</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Flutter</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Product Strategy</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">UI/UX Design</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Design Systems</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Interaction Design</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Frontend Engineering</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">User Research</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Figma</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Flutter</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Product Strategy</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">UI/UX Design</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Design Systems</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Interaction Design</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Frontend Engineering</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">User Research</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Figma</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Flutter</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Product Strategy</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">UI/UX Design</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Design Systems</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Interaction Design</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Frontend Engineering</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">User Research</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Figma</span>
+      class="ticker-sep">✦</span></span><span class="ticker-item">Flutter <span class="ticker-sep">✦</span></span><span
+        class="ticker-item">Product Strategy <span class="ticker-sep">✦</span></span>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <section id="intro">
+    <div class="intro-grid">
+      <div class="intro-left">
+        <p class="intro-text reveal">A <span class="it">Mumbai-based</span> Senior UI/UX Design Leader blending <span
+            class="ul">user-centered principles</span> with strong engineering awareness - building designs that are
+          both beautiful and build-ready.</p>
+        <div class="logos-wrap reveal" aria-label="Companies worked with">
+          <div class="logos-track" aria-hidden="true">
+            <span class="logo-name">Empezar Digital</span><span class="logo-dot">·</span><span
+              class="logo-name">Futurescape Tech</span><span class="logo-dot">·</span><span class="logo-name">Nisos
+              Technology</span><span class="logo-dot">·</span><span class="logo-name">Adani Group</span><span
+              class="logo-dot">·</span><span class="logo-name">PhillipCapital</span><span class="logo-dot">·</span><span
+              class="logo-name">Mirakle Initiatives</span><span class="logo-dot">·</span><span class="logo-name">Myware
+              Solutions</span><span class="logo-dot">·</span>
+            <span class="logo-name">Empezar Digital</span><span class="logo-dot">·</span><span
+              class="logo-name">Futurescape Tech</span><span class="logo-dot">·</span><span class="logo-name">Nisos
+              Technology</span><span class="logo-dot">·</span><span class="logo-name">Adani Group</span><span
+              class="logo-dot">·</span><span class="logo-name">PhillipCapital</span><span class="logo-dot">·</span><span
+              class="logo-name">Mirakle Initiatives</span><span class="logo-dot">·</span><span class="logo-name">Myware
+              Solutions</span><span class="logo-dot">·</span>
+          </div>
+        </div>
+      </div>
+      <div class="intro-right">
+        <div class="about-grid">
+          <div class="about-item item-1">
+            <img src="img/appicon/sahyog.svg" alt="Sahyog" class="img-fluid" />
+          </div>
+          <div class="about-item item-2">
+            <img src="img/appicon/ezruniverse.svg" alt="Ezuruniverse" class="img-fluid" />
+          </div>
+          <div class="about-item item-3">
+            <img src="img/appicon/movemybox.svg" alt="MoveMyBox" class="img-fluid" />
+          </div>
+
+          <div class="about-item item-4">
+            <img src="img/projects/possystem/possystem.jpg" alt="POS System" class="img-fluid">
+          </div>
+          <div class="about-item item-5">
+            <img src="img/projects/aria/aria.jpg" alt="Aria" class="img-fluid">
+          </div>
+
+          <div class="about-item item-6">
+            <!-- <img src="img/appicon/movemybox_logo.svg" alt="MoveMyBox" class="img-fluid" /> -->
+            <video loop muted preload="auto" playsinline class="showcasevideo">
+              <source src="img/appicon/logo_showcase.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="about-item item-8">
+            <video loop muted preload="auto" playsinline class="showcasevideo">
+              <source src="img/projects/visitormanagement/app_showcase.mp4" type="video/mp4">
+            </video>
+            <!-- <img src="img/projects/visitormanagement/visitormanagement.jpg" alt="Visitor Management" class="img-fluid"> -->
+          </div>
+
+          <a href="#work" data-section="work" class="about-item item-7 center-text">
+            FULL PROJECTS BELOW
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-chevron-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+            </svg>
+          </a>
+
+          <div class="about-item item-9">
+            <video loop muted preload="auto" playsinline class="showcasevideo">
+              <source src="img/projects/aura/app_showcase.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <!-- <div class="intro-aside-wrap reveal rd2" aria-hidden="true">
+          <div class="intro-aside">
+            <p>Currently leading UI/UX at Empezar Digital, partnering with product, engineering and stakeholders to ship
+              high-quality digital products that genuinely move the needle.</p>
+            <div class="avail-pill" style="margin-top:18px;"><span class="avail-dot"></span>Open to select projects
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+
+
+
+
+  </section>
+
+  <!-- WORK -->
+  <section id="work">
+    <div class="page-header">
+      <h2 class="page-title reveal">
+        <span>Selected</span>
+        <span class="page-star">
+          <svg width="0.5em" height="0.5em" viewBox="0 0 100 100" fill="currentColor">
+            <path
+              d="M45,0 h10 v35 l25,-25 l7,7 l-25,25 h35 v10 h-35 l25,25 l-7,7 l-25,-25 v35 h-10 v-35 l-25,25 l-7,-7 l25,-25 h-35 v-10 h35 l-25,-25 l7,-7 l25,25 z" />
+          </svg>
+        </span>
+        <span class="italic">Work</span>
+      </h2>
+      <div class="page-sub reveal">
+        <span>CASE STUDIES</span>
+        <span class="page-divider-line"></span>
+        <span>DESIGN PROCESS</span>
+      </div>
+    </div>
+    <div class="projects-list">
+      <div class="project-item p1 reveal" data-cs="cs-empezar">
+        <div class="project-inner">
+          <div class="project-info">
+            <div>
+              <div class="proj-num">01 / 10</div>
+              <h3 class="proj-name">Empezar Digital<br>Website</h3>
+              <div class="proj-tags"><span class="proj-tag">Corporate</span><span class="proj-tag">Web</span><span
+                  class="proj-tag">Figma</span><span class="proj-tag">Bootstrap</span></div>
+            </div>
+            <div>
+              <div class="proj-year">2023</div>
+              <a href="projects/cs-empezar.html" class="proj-view-btn">View Case Study →</a>
+            </div>
+          </div>
+          <div class="proj-img-wrap">
+            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=900&q=80"
+              alt="Empezar Digital<br>Website" loading="lazy" class="proj-real-img">
+            <div class="proj-img-overlay"></div>
+            <div class="proj-hover-cta">View Case →</div>
+          </div>
+        </div>
+      </div>
+      <div class="project-item p2 reveal" data-cs="cs-aura">
+        <div class="project-inner" style="direction:rtl;">
+          <div class="project-info" style="direction:ltr;">
+            <div>
+              <div class="proj-num">02 / 10</div>
+              <h3 class="proj-name">Aura Fitness<br>Health App</h3>
+              <div class="proj-tags"><span class="proj-tag">Health</span><span class="proj-tag">Fitness</span><span
+                  class="proj-tag">Mobile</span></div>
+            </div>
+            <div>
+              <div class="proj-year">2023</div>
+              <a href="projects/cs-aura.html" class="proj-view-btn">View Case Study →</a>
+            </div>
+          </div>
+          <div class="proj-img-wrap">
+            <img src="img/projects/aura/aura.png" alt="Aura Fitness<br>Health App" loading="lazy" class="proj-real-img"
+              style="filter: brightness(0.85);">
+            <div class="proj-img-overlay"></div>
+            <div class="proj-hover-cta">View Case →</div>
+          </div>
+        </div>
+      </div>
+      <div class="project-item p3 reveal" data-cs="cs-onegate">
+        <div class="project-inner">
+          <div class="project-info">
+            <div>
+              <div class="proj-num">03 / 10</div>
+              <h3 class="proj-name">OneGate<br>Visitor App</h3>
+              <div class="proj-tags"><span class="proj-tag">Mobile</span><span class="proj-tag">Flutter</span><span
+                  class="proj-tag">Firebase</span><span class="proj-tag">iOS/Android</span></div>
+            </div>
+            <div>
+              <div class="proj-year">2022</div>
+              <a href="projects/cs-onegate.html" class="proj-view-btn">View Case Study →</a>
+            </div>
+          </div>
+          <div class="proj-img-wrap">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=900&q=80"
+              alt="OneGate<br>Visitor App" loading="lazy" class="proj-real-img">
+            <div class="proj-img-overlay"></div>
+            <div class="proj-hover-cta">View Case →</div>
+          </div>
+        </div>
+      </div>
+      <div class="project-item p4 reveal" data-cs="cs-adani-transport">
+        <div class="project-inner" style="direction:rtl;">
+          <div class="project-info" style="direction:ltr;">
+            <div>
+              <div class="proj-num">04 / 10</div>
+              <h3 class="proj-name">Adani Integrated<br>Transport Platform</h3>
+              <div class="proj-tags"><span class="proj-tag">Enterprise</span><span class="proj-tag">Angular</span><span
+                  class="proj-tag">UX Architecture</span></div>
+            </div>
+            <div>
+              <div class="proj-year">2021</div>
+              <a href="projects/cs-adani-transport.html" class="proj-view-btn">View Case Study →</a>
+            </div>
+          </div>
+          <div class="proj-img-wrap">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=900&q=80"
+              alt="Adani Integrated<br>Transport Platform" loading="lazy" class="proj-real-img">
+            <div class="proj-img-overlay"></div>
+            <div class="proj-hover-cta">View Case →</div>
+          </div>
+        </div>
+      </div>
+      <div class="project-item p5 reveal" data-cs="cs-adani-logistics">
+        <div class="project-inner">
+          <div class="project-info">
+            <div>
+              <div class="proj-num">05 / 10</div>
+              <h3 class="proj-name">Adani Logistics<br>Management System</h3>
+              <div class="proj-tags"><span class="proj-tag">Enterprise</span><span class="proj-tag">Blazor</span><span
+                  class="proj-tag">.NET</span><span class="proj-tag">Design System</span></div>
+            </div>
+            <div>
+              <div class="proj-year">2020</div>
+              <a href="projects/cs-adani-logistics.html" class="proj-view-btn">View Case Study →</a>
+            </div>
+          </div>
+          <div class="proj-img-wrap">
+            <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=900&q=80"
+              alt="Adani Logistics<br>Management System" loading="lazy" class="proj-real-img">
+            <div class="proj-img-overlay"></div>
+            <div class="proj-hover-cta">View Case →</div>
+          </div>
+        </div>
+      </div>
+      <div class="project-item p6 reveal" data-cs="cs-greenscape">
+        <div class="project-inner" style="direction:rtl;">
+          <div class="project-info" style="direction:ltr;">
+            <div>
+              <div class="proj-num">06 / 10</div>
+              <h3 class="proj-name">Greenscape<br>Real Estate</h3>
+              <div class="proj-tags"><span class="proj-tag">Real Estate</span><span class="proj-tag">Web</span><span
+                  class="proj-tag">Visual Design</span><span class="proj-tag">jQuery</span></div>
+            </div>
+            <div>
+              <div class="proj-year">2021</div>
+              <a href="projects/cs-greenscape.html" class="proj-view-btn">View Case Study →</a>
+            </div>
+          </div>
+          <div class="proj-img-wrap">
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=900&q=80"
+              alt="Greenscape<br>Real Estate" loading="lazy" class="proj-real-img">
+            <div class="proj-img-overlay"></div>
+            <div class="proj-hover-cta">View Case →</div>
+          </div>
+        </div>
+      </div>
+      <div class="project-item p7 reveal" data-cs="cs-hyperion">
+        <div class="project-inner">
+          <div class="project-info">
+            <div>
+              <div class="proj-num">07 / 10</div>
+              <h3 class="proj-name">HyperionBCC<br>Agency Site</h3>
+              <div class="proj-tags"><span class="proj-tag">Agency</span><span class="proj-tag">Bootstrap</span><span
+                  class="proj-tag">Navigation UX</span></div>
+            </div>
+            <div>
+              <div class="proj-year">2022</div>
+              <a href="projects/cs-hyperion.html" class="proj-view-btn">View Case Study →</a>
+            </div>
+          </div>
+          <div class="proj-img-wrap">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80"
+              alt="HyperionBCC<br>Agency Site" loading="lazy" class="proj-real-img">
+            <div class="proj-img-overlay"></div>
+            <div class="proj-hover-cta">View Case →</div>
+          </div>
+        </div>
+      </div>
+      <div class="project-item p8 reveal" data-cs="cs-phillip">
+        <div class="project-inner" style="direction:rtl;">
+          <div class="project-info" style="direction:ltr;">
+            <div>
+              <div class="proj-num">08 / 10</div>
+              <h3 class="proj-name">PhillipCapital<br>Trading App</h3>
+              <div class="proj-tags"><span class="proj-tag">FinTech</span><span class="proj-tag">Flutter</span><span
+                  class="proj-tag">Mobile</span><span class="proj-tag">Onboarding</span></div>
+            </div>
+            <div>
+              <div class="proj-year">2020</div>
+              <a href="projects/cs-phillip.html" class="proj-view-btn">View Case Study →</a>
+            </div>
+          </div>
+          <div class="proj-img-wrap">
+            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=900&q=80"
+              alt="PhillipCapital<br>Trading App" loading="lazy" class="proj-real-img">
+            <div class="proj-img-overlay"></div>
+            <div class="proj-hover-cta">View Case →</div>
+          </div>
+        </div>
+      </div>
+      <div class="project-item p9 reveal" data-cs="cs-cubeone-web">
+        <div class="project-inner">
+          <div class="project-info">
+            <div>
+              <div class="proj-num">09 / 10</div>
+              <h3 class="proj-name">CubeOneBiz<br>Web Platform</h3>
+              <div class="proj-tags"><span class="proj-tag">Enterprise</span><span class="proj-tag">Node.js</span><span
+                  class="proj-tag">PHP</span><span class="proj-tag">Full-Stack</span></div>
+            </div>
+            <div>
+              <div class="proj-year">2019</div>
+              <a href="projects/cs-cubeone-web.html" class="proj-view-btn">View Case Study →</a>
+            </div>
+          </div>
+          <div class="proj-img-wrap">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&q=80"
+              alt="CubeOneBiz<br>Web Platform" loading="lazy" class="proj-real-img">
+            <div class="proj-img-overlay"></div>
+            <div class="proj-hover-cta">View Case →</div>
+          </div>
+        </div>
+      </div>
+      <div class="project-item p10 reveal" data-cs="cs-cubeone-mobile">
+        <div class="project-inner" style="direction:rtl;">
+          <div class="project-info" style="direction:ltr;">
+            <div>
+              <div class="proj-num">10 / 10</div>
+              <h3 class="proj-name">CubeOne<br>Mobile App</h3>
+              <div class="proj-tags"><span class="proj-tag">Mobile</span><span class="proj-tag">Flutter</span><span
+                  class="proj-tag">Firebase</span><span class="proj-tag">Offline-First</span></div>
+            </div>
+            <div>
+              <div class="proj-year">2019</div>
+              <a href="projects/cs-cubeone-mobile.html" class="proj-view-btn">View Case Study →</a>
+            </div>
+          </div>
+          <div class="proj-img-wrap">
+            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=900&q=80" alt="CubeOne<br>Mobile App"
+              loading="lazy" class="proj-real-img">
+            <div class="proj-img-overlay"></div>
+            <div class="proj-hover-cta">View Case →</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLAYGROUND -->
+  <section id="playground">
+    <!-- <div class="sec-header">
+      <div><span
+          style="display:block;font-size:10px;letter-spacing:.3em;color:var(--accent);text-transform:uppercase;font-weight:600;margin-bottom:10px;">03</span>
+        <h2 class="sec-title reveal">Play<br>ground</h2>
+      </div>
+      <a href="https://github.com" target="_blank" class="sec-link reveal rd2">See all experiments →</a>
+    </div> -->
+
+    <div class="page-header">
+      <h2 class="page-title reveal">
+        <span>Play</span>
+        <span class="page-star">
+          <svg width="0.5em" height="0.5em" viewBox="0 0 100 100" fill="currentColor">
+            <path
+              d="M45,0 h10 v35 l25,-25 l7,7 l-25,25 h35 v10 h-35 l25,25 l-7,7 l-25,-25 v35 h-10 v-35 l-25,25 l-7,-7 l25,-25 h-35 v-10 h35 l-25,-25 l7,-7 l25,25 z" />
+          </svg>
+        </span>
+        <span class="italic">Ground</span>
+      </h2>
+      <div class="page-sub reveal">
+        <span>Other Projects</span>
+        <span class="page-divider-line"></span>
+        <span>Concepts</span>
+        <span class="page-divider-line"></span>
+        <span>Experiments</span>
+      </div>
+    </div>
+
+    <div class="play-grid">
+      <a href="projects/pg-flutgrid.html" class="play-item" data-cs="pg-flutgrid"
+        style="background:linear-gradient(135deg,#071420 0%,#0d2137 60%,#071420 100%);"
+        aria-label="View FlutGrid project">
+        <div class="play-img-wrap"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=700&q=80"
+            alt="FlutGrid" loading="lazy" class="play-real-img"></div>
+        <div class="play-overlay"></div>
+        <div class="play-num">01</div>
+        <div class="play-arrow">↗</div>
+        <div class="play-info">
+          <div class="play-tag-label">Open Source · Flutter</div>
+          <div class="play-title">FlutGrid</div>
+          <div class="play-sub">Flutter Package · 2024</div>
+        </div>
+      </a>
+      <a href="projects/pg-clamp.html" class="play-item" data-cs="pg-clamp"
+        style="background:linear-gradient(135deg,#1a0a00 0%,#2d1600 60%,#1a0a00 100%);"
+        aria-label="View Clamp FontSize Generator project">
+        <div class="play-img-wrap"><img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=700&q=80"
+            alt="Clamp FontSize Generator" loading="lazy" class="play-real-img"></div>
+        <div class="play-overlay"></div>
+        <div class="play-num">02</div>
+        <div class="play-arrow">↗</div>
+        <div class="play-info">
+          <div class="play-tag-label">Open Source · Web Tool</div>
+          <div class="play-title">Clamp FontSize Generator</div>
+          <div class="play-sub">Web Tool · 2023</div>
+        </div>
+      </a>
+      <a href="projects/pg-flutter-widgets.html" class="play-item" data-cs="pg-flutter-widgets"
+        style="background:linear-gradient(135deg,#001a0a 0%,#002d16 60%,#001a0a 100%);"
+        aria-label="View Custom Flutter Widgets project">
+        <div class="play-img-wrap"><img src="https://images.unsplash.com/photo-1545670723-196ed0954986?w=700&q=80"
+            alt="Custom Flutter Widgets" loading="lazy" class="play-real-img"></div>
+        <div class="play-overlay"></div>
+        <div class="play-num">03</div>
+        <div class="play-arrow">↗</div>
+        <div class="play-info">
+          <div class="play-tag-label">Open Source · Components</div>
+          <div class="play-title">Custom Flutter Widgets</div>
+          <div class="play-sub">Open Source · 2023</div>
+        </div>
+      </a>
+      <a href="projects/pg-blazor.html" class="play-item" data-cs="pg-blazor"
+        style="background:linear-gradient(135deg,#1a001a 0%,#2d002d 60%,#1a001a 100%);"
+        aria-label="View Blazor Components project">
+        <div class="play-img-wrap"><img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=700&q=80"
+            alt="Blazor Components" loading="lazy" class="play-real-img"></div>
+        <div class="play-overlay"></div>
+        <div class="play-num">04</div>
+        <div class="play-arrow">↗</div>
+        <div class="play-info">
+          <div class="play-tag-label">Open Source · .NET</div>
+          <div class="play-title">Blazor Components</div>
+          <div class="play-sub">Component Library · 2022</div>
+        </div>
+      </a>
+      <a href="projects/pg-terminal.html" class="play-item" data-cs="pg-terminal"
+        style="background:linear-gradient(135deg,#071a07 0%,#0f2e0f 60%,#071a07 100%);"
+        aria-label="View Terminal Portfolio project">
+        <div class="play-img-wrap"><img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=700&q=80"
+            alt="Terminal Portfolio" loading="lazy" class="play-real-img"></div>
+        <div class="play-overlay"></div>
+        <div class="play-num">05</div>
+        <div class="play-arrow">↗</div>
+        <div class="play-info">
+          <div class="play-tag-label">Creative Coding · UX Experiment</div>
+          <div class="play-title">Terminal Portfolio</div>
+          <div class="play-sub">Creative Experiment · 2022</div>
+        </div>
+      </a>
+      <a href="projects/pg-webpos.html" class="play-item" data-cs="pg-webpos"
+        style="background:linear-gradient(135deg,#071a07 0%,#0f2e0f 60%,#071a07 100%);" aria-label="View WebPOS">
+        <div class="play-img-wrap"><img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=700&q=80"
+            alt="Terminal Portfolio" loading="lazy" class="play-real-img"></div>
+        <div class="play-overlay"></div>
+        <div class="play-num">06</div>
+        <div class="play-arrow">↗</div>
+        <div class="play-info">
+          <div class="play-tag-label">UX Case Study · F&B Tech</div>
+          <div class="play-title">WebPOS</div>
+          <div class="play-sub">UX Case Study · 2022</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="h-track">
+      <div class="h-card">
+        <div class="h-num">01</div>
+        <h3 class="h-title">Product Strategy</h3>
+        <p class="h-desc">From fuzzy brief to clear product direction — problem framing, roadmaps, and OKR alignment.
+        </p>
+        <div class="h-glow"></div>
+      </div>
+      <div class="h-card">
+        <div class="h-num">02</div>
+        <h3 class="h-title">UX Research</h3>
+        <p class="h-desc">User interviews, usability testing, journey mapping, heuristic evaluation, and insight
+          synthesis.</p>
+        <div class="h-glow"></div>
+      </div>
+      <div class="h-card">
+        <div class="h-num">03</div>
+        <h3 class="h-title">Interface Design</h3>
+        <p class="h-desc">Pixel-perfect, high-fidelity UI with obsessive attention to hierarchy, spacing, and visual
+          polish.</p>
+        <div class="h-glow"></div>
+      </div>
+      <div class="h-card">
+        <div class="h-num">04</div>
+        <h3 class="h-title">Design Systems</h3>
+        <p class="h-desc">Scalable, token-based component libraries in Figma and code — Blazor, Flutter, React, Angular.
+        </p>
+        <div class="h-glow"></div>
+      </div>
+      <div class="h-card">
+        <div class="h-num">05</div>
+        <h3 class="h-title">Interaction & Motion</h3>
+        <p class="h-desc">Purposeful micro-interactions and animation that guide users and add delight without noise.
+        </p>
+        <div class="h-glow"></div>
+      </div>
+      <div class="h-card">
+        <div class="h-num">06</div>
+        <h3 class="h-title">Frontend Engineering</h3>
+        <p class="h-desc">HTML5, CSS3, React, Angular, Vue, Flutter, Blazor — designs that translate perfectly to code.
+        </p>
+        <div class="h-glow"></div>
+      </div>
+      <div class="h-card">
+        <div class="h-num">07</div>
+        <h3 class="h-title">Accessibility (WCAG)</h3>
+        <p class="h-desc">WCAG 2.1 AA compliant designs that are inclusive and meet enterprise compliance requirements.
+        </p>
+        <div class="h-glow"></div>
+      </div>
+      <div class="h-card">
+        <div class="h-num">08</div>
+        <h3 class="h-title">Team Mentorship</h3>
+        <p class="h-desc">Design critique, process coaching, and mentorship for junior and mid-level design teams.</p>
+        <div class="h-glow"></div>
+      </div>
+      <div class="h-card">
+        <div class="h-num">01</div>
+        <h3 class="h-title">Product Strategy</h3>
+        <p class="h-desc">From fuzzy brief to clear product direction — problem framing, roadmaps, and OKR alignment.
+        </p>
+        <div class="h-glow"></div>
+      </div>
+      <div class="h-card">
+        <div class="h-num">02</div>
+        <h3 class="h-title">UX Research</h3>
+        <p class="h-desc">User interviews, usability testing, journey mapping, heuristic evaluation, and insight
+          synthesis.</p>
+        <div class="h-glow"></div>
+      </div>
+      <div class="h-card">
+        <div class="h-num">03</div>
+        <h3 class="h-title">Interface Design</h3>
+        <p class="h-desc">Pixel-perfect, high-fidelity UI with obsessive attention to hierarchy, spacing, and visual
+          polish.</p>
+        <div class="h-glow"></div>
+      </div>
+      <div class="h-card">
+        <div class="h-num">04</div>
+        <h3 class="h-title">Design Systems</h3>
+        <p class="h-desc">Scalable, token-based component libraries in Figma and code — Blazor, Flutter, React, Angular.
+        </p>
+        <div class="h-glow"></div>
+      </div>
+      <div class="h-card">
+        <div class="h-num">05</div>
+        <h3 class="h-title">Interaction & Motion</h3>
+        <p class="h-desc">Purposeful micro-interactions and animation that guide users and add delight without noise.
+        </p>
+        <div class="h-glow"></div>
+      </div>
+      <div class="h-card">
+        <div class="h-num">06</div>
+        <h3 class="h-title">Frontend Engineering</h3>
+        <p class="h-desc">HTML5, CSS3, React, Angular, Vue, Flutter, Blazor — designs that translate perfectly to code.
+        </p>
+        <div class="h-glow"></div>
+      </div>
+      <div class="h-card">
+        <div class="h-num">07</div>
+        <h3 class="h-title">Accessibility (WCAG)</h3>
+        <p class="h-desc">WCAG 2.1 AA compliant designs that are inclusive and meet enterprise compliance requirements.
+        </p>
+        <div class="h-glow"></div>
+      </div>
+      <div class="h-card">
+        <div class="h-num">08</div>
+        <h3 class="h-title">Team Mentorship</h3>
+        <p class="h-desc">Design critique, process coaching, and mentorship for junior and mid-level design teams.</p>
+        <div class="h-glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="page-header">
+      <h2 class="page-title reveal">
+        <span>About</span>
+        <span class="page-star">
+          <svg width="0.5em" height="0.5em" viewBox="0 0 100 100" fill="currentColor">
+            <path
+              d="M45,0 h10 v35 l25,-25 l7,7 l-25,25 h35 v10 h-35 l25,25 l-7,7 l-25,-25 v35 h-10 v-35 l-25,25 l-7,-7 l25,-25 h-35 v-10 h35 l-25,-25 l7,-7 l25,25 z" />
+          </svg>
+        </span>
+        <span class="italic">Me</span>
+      </h2>
+      <div class="page-sub reveal">
+        <span>Personal Info</span>
+        <span class="page-divider-line"></span>
+        <span>Experience</span>
+        <span class="page-divider-line"></span>
+        <span>skills</span>
+      </div>
+    </div>
+    <div class="bento-grid">
+      <!-- Left Column -->
+      <div class="bento-col">
+        <div class="bento-card p-6 reveal">
+          <h3 class="bento-title-large">Product Designer with 14 years of experience, focused on creating functional and
+            user-centered digital products with visually stunning designs.</h3>
+          <div class="bento-socials">
+            <div class="bento-social-icons">
+              <a href="#" class="social-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                </svg>
+              </a>
+              <a href="#" class="social-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </a>
+            </div>
+            <a href="img/Abdul-Razak-Shaikh-Resume.pdf" target="_blank" class="btn-resume">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+              </svg>
+              Resume
+            </a>
+          </div>
+        </div>
+        <div class="bento-card p-6 reveal rd1">
+          <h4 class="bento-card-title">MY BACKGROUND</h4>
+          <p class="bento-text">Growing up in Mumbai, the <span class="text-highlight">bustling commercial
+              capital</span> of India, my home was a fusion of creativity and analytical thinking. This <span
+              class="text-highlight">unique blend</span> has deeply shaped my perspective.</p>
+          <p class="bento-text">My <span class="text-highlight">fascination with technology</span> began early, sparked
+            by our trusty beige computer. my true passion lies in the <span class="text-highlight">transformative power
+              of great
+              design craft</span>.</p>
+          <p class="bento-text" style="font-style: italic;">My curiosity led me to wonder: could I also create something
+            that can evoke this effect on people?</p>
+          <p class="bento-text">Today, I <span class="text-highlight">apply my multidisciplinary design skills</span>,
+            aiming to create solutions that make people feel and remember, <span class="text-highlight">elevating
+              everyday experiences into inspiring solutions</span>.</p>
+          <div class="signature"><img src="img/signature.png" alt=""></div>
+        </div>
+
+      </div>
+      <!-- Middle Column -->
+      <div class="bento-col">
+        <div class="bento-card img-card reveal" style=" background-color: #FFFFFF;">
+          <img src="img/about.png" alt="Portrait" />
+        </div>
+        <div class="bento-card p-6 reveal rd1">
+          <h4 class="bento-card-title">AWARDS</h4>
+          <div class="bento-list">
+            <div class="bento-list-item">
+              <div class="bento-award-icon" style="background: #FF7262;"></div>
+              <div class="bento-list-content">
+                <h5 class="bento-list-title">Special Kudos Award</h5>
+                <a class="bento-link-text" href="#">CSS Design Awards ↗</a>
+              </div>
+            </div>
+            <div class="bento-list-item">
+              <div class="bento-award-icon" style="background: #1ABCFE;"></div>
+              <div class="bento-list-content">
+                <h5 class="bento-list-title">Special Recognition Award</h5>
+                <a class="bento-link-text">A1 Gallery ↗</a>
+              </div>
+            </div>
+            <div class="bento-list-item">
+              <div class="bento-award-icon" style="background: #FDBD39;"></div>
+              <div class="bento-list-content">
+                <h5 class="bento-list-title">UX Design Award</h5>
+                <a class="bento-link-text">Awwwards ↗</a>
+              </div>
+            </div>
+            <div class="bento-list-item">
+              <div class="bento-award-icon" style="background: #b7a503;"></div>
+              <div class="bento-list-content">
+                <h5 class="bento-list-title">Site of the Day</h5>
+                <a class="bento-link-text">Wall of Portfolios ↗</a>
+              </div>
+            </div>
+            <div class="bento-list-item">
+              <div class="bento-award-icon" style="background: #fc440c;"></div>
+              <div class="bento-list-content">
+                <h5 class="bento-list-title">Honorable Mention</h5>
+                <a class="bento-link-text">FWA ↗</a>
+              </div>
+            </div>
+            <div class="bento-list-item">
+              <div class="bento-award-icon" style="background: #8359FF;"></div>
+              <div class="bento-list-content">
+                <h5 class="bento-list-title">Winner</h5>
+                <a class="bento-link-text">CSSWave ↗</a>
+              </div>
+            </div>
+            <div class="bento-list-item">
+              <div class="bento-award-icon" style="background: #1c31cf;"></div>
+              <div class="bento-list-content">
+                <h5 class="bento-list-title">Winner</h5>
+                <a class="bento-link-text">Online Design Awards ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bento-card p-6 reveal rd2">
+          <h4 class="bento-card-title">EDUCATION</h4>
+
+          <div class="bento-list">
+            <div class="bento-list-item">
+              <div class="bento-list-date">2008 — 2011</div>
+              <div class="bento-list-content">
+                <h5 class="bento-list-title">Bachelor of Computer Applications</h5>
+                <p class="bento-list-text">Mumbai University</p>
+              </div>
+            </div>
+            <div class="bento-list-item">
+              <div class="bento-list-date">2007</div>
+              <div class="bento-list-content">
+                <h5 class="bento-list-title">Maharashtra State Certificate in Information Technology</h5>
+                <p class="bento-list-text">MKCL</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Right Column -->
+      <div class="bento-col">
+        <div class="bento-card p-6 reveal">
+          <h4 class="bento-card-title">EXPERIENCE</h4>
+          <div class="exp-timeline">
+
+            <!-- Visible: first 3 items -->
+            <div class="exp-item">
+              <div class="exp-dot current"></div>
+              <div class="exp-line"></div>
+              <div class="exp-body">
+                <div class="exp-date">Jun 2022 — Present</div>
+                <h5 class="exp-role">UI/UX Manager</h5>
+                <div class="exp-company">
+                  <a href="https://empezar.digital/" class="bento-link" target="_blank">Empezar Digital ↗</a>
+                  <span class="bento-badge">WFO</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="exp-item">
+              <div class="exp-dot"></div>
+              <div class="exp-line"></div>
+              <div class="exp-body">
+                <div class="exp-date">Dec 2017 — Feb 2022</div>
+                <h5 class="exp-role">Senior UX/UI Designer &amp; Developer</h5>
+                <div class="exp-company">
+                  <a href="https://futurescapetech.com/" class="bento-link" target="_blank">Futurescape Tech ↗</a>
+                  <span class="bento-badge">WFO</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="exp-item">
+              <div class="exp-dot"></div>
+              <div class="exp-line"></div>
+              <div class="exp-body">
+                <div class="exp-date">May 2015 — Dec 2017</div>
+                <h5 class="exp-role">Senior UI/UX Designer &amp; Developer</h5>
+                <div class="exp-company">
+                  <a href="https://nisostech.com/" class="bento-link" target="_blank">Nisos Technology ↗</a>
+                  <span class="bento-badge">Remote</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hidden: past experience (items 4-7) -->
+            <div class="exp-more-wrap" id="expMoreWrap">
+              <div class="exp-item">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+                <div class="exp-body">
+                  <div class="exp-date">Jan 2015 — Apr 2015</div>
+                  <h5 class="exp-role">Senior Web Designer &amp; Developer</h5>
+                  <div class="exp-company">Mirakle Initiatives</div>
+                </div>
+              </div>
+
+              <div class="exp-item">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+                <div class="exp-body">
+                  <div class="exp-date">Feb 2013 — Jan 2015</div>
+                  <h5 class="exp-role">Web Designer &amp; Web Developer</h5>
+                  <div class="exp-company">Myware Solutions</div>
+                </div>
+              </div>
+
+              <div class="exp-item">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+                <div class="exp-body">
+                  <div class="exp-date">Aug 2012 — Jan 2013</div>
+                  <h5 class="exp-role">Web Designer &amp; Web Developer</h5>
+                  <div class="exp-company">Paramonos Technology</div>
+                </div>
+              </div>
+
+              <div class="exp-item last">
+                <div class="exp-dot"></div>
+                <div class="exp-body">
+                  <div class="exp-date">Oct 2010 — Aug 2012</div>
+                  <h5 class="exp-role">Web &amp; Graphics Designer</h5>
+                  <div class="exp-company">Saraswati Enterprises</div>
+                </div>
+              </div>
+            </div>
+            <!-- /exp-more-wrap -->
+
+            <!-- Toggle link -->
+            <button class="exp-toggle-btn" id="expToggleBtn" aria-expanded="false" onclick="toggleExpMore()">
+              <span class="exp-toggle-text">More past experience</span>
+              <span class="exp-toggle-icon">↓</span>
+            </button>
+
+          </div>
+        </div>
+        <div class="bento-card p-6 reveal rd2">
+          <h4 class="bento-card-title">TOOL STACK</h4>
+
+          <!-- Design Tools -->
+          <div class="tool-category-label">Design</div>
+          <div class="bento-tools">
+            <div class="tool-icon" data-label="Figma">
+              <img src="img/Icon/figma.svg" alt="Figma">
+            </div>
+            <div class="tool-icon" data-label="Adobe XD" style="background-color: #470137;">
+              <img src="img/Icon/adobexd.svg" alt="Adobe XD">
+            </div>
+            <div class="tool-icon" data-label="Photoshop" style="background-color:#001834;">
+              <img src="img/Icon/photoshop.svg" alt="Photoshop">
+            </div>
+            <div class="tool-icon" data-label="Illustrator" style="background-color: #330000;">
+              <img src="img/Icon/illustrator.svg" alt="Illustrator">
+            </div>
+            <div class="tool-icon" data-label="After Effects" style="background-color: #00005B;">
+              <img src="img/Icon/aftereffects.svg" alt="After Effects">
+            </div>
+            <div class="tool-icon" data-label="InVision" style="background-color: #ff3366;">
+              <img src="img/Icon/invision.svg" alt="InVision">
+            </div>
+            <div class="tool-icon" data-label="Webflow">
+              <img src="img/Icon/webflow.svg" alt="Webflow">
+            </div>
+            <div class="tool-icon" data-label="Framer">
+              <img src="img/Icon/framer.svg" alt="Framer">
+            </div>
+            <div class="tool-icon" data-label="Inkscape" style="background:#FFFFFF;">
+              <img src="img/Icon/Inkscape.svg" alt="Inkscape">
+            </div>
+          </div>
+
+          <!-- Frontend Tools -->
+          <div class="tool-category-label" style="margin-top:16px;">Frontend & Coding</div>
+          <div class="bento-tools">
+            <div class="tool-icon" data-label="HTML5">
+              <img src="img/Icon/html.svg" alt="HTML5">
+            </div>
+            <div class="tool-icon" data-label="CSS3">
+              <img src="img/Icon/css.svg" alt="CSS3">
+            </div>
+            <div class="tool-icon" data-label="SASS">
+              <img src="img/Icon/sass.svg" alt="SASS">
+            </div>
+            <div class="tool-icon" data-label="Bootstrap">
+              <img src="img/Icon/bootstrap.svg" alt="Bootstrap">
+            </div>
+            <div class="tool-icon" data-label="Tailwind" style="background-color: #FFFFFF;">
+              <img src="img/Icon/tailwind.svg" alt="Tailwind">
+            </div>
+            <div class="tool-icon" data-label="JavaScript" style="background-color:#f7df1e;">
+              <img src="img/Icon/javascript.svg" alt="JavaScript">
+            </div>
+            <div class="tool-icon" data-label="TypeScript" style="background-color:#007acc;">
+              <img src="img/Icon/typescript.svg" alt="TypeScript">
+            </div>
+            <div class="tool-icon" data-label="React">
+              <img src="img/Icon/react.svg" alt="React">
+            </div>
+            <div class="tool-icon" data-label="Angular" style="background:#FFFFFF;">
+              <img src="img/Icon/angular.svg" alt="Angular">
+            </div>
+            <div class="tool-icon" data-label="Flutter" style="background:#FFFFFF;">
+              <img src="img/Icon/flutter.svg" alt="Flutter">
+            </div>
+            <div class="tool-icon" data-label="Node.js" style="background:#083308;">
+              <img src="img/Icon/node.svg" alt="Node.js">
+            </div>
+            <div class="tool-icon" data-label="Blazor">
+              <img src="img/Icon/blazor.svg" alt="Blazor">
+            </div>
+
+          </div>
+
+          <!-- AI / Research -->
+          <div class="tool-category-label" style="margin-top:16px;">AI &amp; Research</div>
+          <div class="bento-tools">
+            <div class="tool-icon" data-label="ChatGPT" style="background-color: #FFFFFF;">
+              <img src="img/Icon/chatgpt.svg" alt="ChatGPT">
+            </div>
+            <div class="tool-icon" data-label="Gemini" style="background-color: #FFFFFF;">
+              <img src="img/Icon/gemini.svg" alt="Gemini">
+            </div>
+            <div class="tool-icon" data-label="Claude" style="background-color: #d77655;">
+              <img src="img/Icon/claude.svg" alt="Claude">
+            </div>
+            <div class="tool-icon" data-label="Copilot" style="background-color: #FFFFFF;">
+              <img src="img/Icon/copilot.svg" alt="Copilot">
+            </div>
+            <div class="tool-icon" data-label="Figma Make">
+              <img src="img/Icon/figmamake.svg" alt="Figma Make">
+            </div>
+          </div>
+        </div>
+
+        <!-- SKILLS -->
+        <!-- <div class="bento-card p-6 reveal rd1">
+          <h4 class="bento-card-title">SKILL STACK</h4>
+
+          <div class="skill-stack">
+
+            <div class="skill-group">
+              <div class="skill-group-label">Core Skills</div>
+              <div class="skill-tags">
+                <span class="skill-tag accent">UI/UX Design</span>
+                <span class="skill-tag accent">Product Design</span>
+                <span class="skill-tag">Design Systems</span>
+                <span class="skill-tag">User Research</span>
+                <span class="skill-tag">Wireframing</span>
+                <span class="skill-tag">Prototyping</span>
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">Adobe XD</span>
+                <span class="skill-tag">Usability Testing</span>
+                <span class="skill-tag">Interaction Design</span>
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Flutter</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Angular</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <div class="skill-group-label">Research &amp; Analysis</div>
+              <div class="skill-tags">
+                <span class="skill-tag">User Interviews</span>
+                <span class="skill-tag">Surveys</span>
+                <span class="skill-tag">Focus Groups</span>
+                <span class="skill-tag">A/B Testing</span>
+                <span class="skill-tag">Heuristic Evaluation</span>
+                <span class="skill-tag">Affinity Mapping</span>
+                <span class="skill-tag">Journey Mapping</span>
+                <span class="skill-tag">Card Sorting</span>
+                <span class="skill-tag">UX Metrics</span>
+                <span class="skill-tag">Conversion Analysis</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <div class="skill-group-label">AI Tools</div>
+              <div class="skill-tags">
+                <span class="skill-tag ai">ChatGPT</span>
+                <span class="skill-tag ai">Gemini</span>
+                <span class="skill-tag ai">Copilot</span>
+                <span class="skill-tag ai">Antigravity</span>
+                <span class="skill-tag ai">Figma Make</span>
+                <span class="skill-tag ai">Claude</span>
+                <span class="skill-tag ai">Maze ai</span>
+                <span class="skill-tag ai">Useberry ai</span>
+                <span class="skill-tag ai">Dovetail ai</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <div class="skill-group-label">Design Tools</div>
+              <div class="skill-tags">
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">Adobe XD</span>
+                <span class="skill-tag">Photoshop</span>
+                <span class="skill-tag">Illustrator</span>
+                <span class="skill-tag">After Effects</span>
+                <span class="skill-tag">InVision</span>
+                <span class="skill-tag">Zeplin</span>
+                <span class="skill-tag">Webflow</span>
+                <span class="skill-tag">Framer</span>
+                <span class="skill-tag">Mockflow</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <div class="skill-group-label">Frontend Development</div>
+              <div class="skill-tags">
+                <span class="skill-tag dev">HTML5</span>
+                <span class="skill-tag dev">CSS3</span>
+                <span class="skill-tag dev">SASS</span>
+                <span class="skill-tag dev">Bootstrap</span>
+                <span class="skill-tag dev">Tailwind</span>
+                <span class="skill-tag dev">JavaScript</span>
+                <span class="skill-tag dev">TypeScript</span>
+                <span class="skill-tag dev">jQuery</span>
+                <span class="skill-tag dev">Angular</span>
+                <span class="skill-tag dev">React</span>
+                <span class="skill-tag dev">Vue</span>
+                <span class="skill-tag dev">Blazor</span>
+                <span class="skill-tag dev">Flutter</span>
+                <span class="skill-tag dev">.NET</span>
+                <span class="skill-tag dev">Node.js</span>
+                <span class="skill-tag dev">PHP</span>
+              </div>
+            </div>
+
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta">
+    <div class="cta-bg" aria-hidden="true"></div>
+    <div class="cta-sublabel">Let's Collaborate</div>
+    <h2 class="cta-title reveal">Got a big<br><span class="cl">idea?</span><br>Let's build it.</h2>
+    <div class="cta-btns reveal rd1">
+      <a href="mailto:89abdul@gmail.com" class="btn-p">Start a Project →</a>
+      <a href="tel:+919819992152" class="btn-s">+91 98199 92152</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <img src="img/ar-white.png" alt="Abdul Razak Shaikh" />
+    <div class="footer-copy">Abdul Razak Shaikh © 2026 &nbsp;·&nbsp; Senior UI/UX Design Leader &nbsp;·&nbsp; Mumbai,
+      India</div>
+    <div class="footer-links">
+      <a href="mailto:[EMAIL_ADDRESS]" target="_blank" rel="noopener">Email</a>
+      <a href="https://www.linkedin.com/in/abdulrazakshaikh/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://wa.me/919819992152" target="_blank" rel="noopener">Whatsapp</a>
+      <a href="tel:+919819992152">Call</a>
+    </div>
+  </footer>
+
+  <!-- LENIS SMOOTH SCROLL CDN -->
+  <script src="js/lenis.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
